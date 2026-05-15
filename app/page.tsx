@@ -54,23 +54,20 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Profile Card - Modified for "Farther" Look */}
+            {/* Profile Card */}
             <div className="relative w-full mt-16 lg:mt-0 flex justify-center lg:justify-end">
               <div className="glass-panel tilt-card relative w-full max-w-md aspect-[3/4] rounded-xl p-4 flex flex-col items-center justify-center group overflow-hidden">
-                <div className="absolute inset-2 border border-white/30 rounded-lg pointer-events-none transition-all duration-500 group-hover:inset-3 group-hover:border-secondary/30 z-20" />
-                
-                {/* Image Container with Padding (p-8) to make the person look farther */}
-                <div className="relative w-full h-full rounded-lg overflow-hidden bg-surface-variant p-8">
+                <div className="absolute inset-2 border border-white/30 rounded-lg pointer-events-none transition-all duration-500 group-hover:inset-3 group-hover:border-secondary/30" />
+                <div className="relative w-full h-full rounded-lg overflow-hidden bg-surface-variant">
                   <Image
                     src="/images/rewan.jpg"
                     alt="Rewan Zakaria"
                     fill
-                    className="object-contain transition-transform duration-700 group-hover:scale-105"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
-
                 {/* Floating Name Badge */}
-                <div className="absolute bottom-10 left-10 glass-panel px-6 py-3 rounded-full flex items-center gap-3 shadow-lg transition-transform duration-500 group-hover:-translate-y-2 z-30">
+                <div className="absolute bottom-10 left-10 glass-panel px-6 py-3 rounded-full flex items-center gap-3 shadow-lg transition-transform duration-500 group-hover:-translate-y-2">
                   <div className="w-2 h-2 rounded-full bg-secondary" />
                   <span className="font-hanken text-xs font-semibold tracking-widest text-primary">Rewan Zakaria</span>
                 </div>
