@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Mokhtar Ibrahim | Luxury Real Estate Expert Egypt",
-    template: "%s | Mokhtar Ibrahim",
+    default: "Rewan Zakaria | Luxury Real Estate Expert Egypt",
+    template: "%s | Rewan Zakaria",
   },
   description:
     "Visionary real estate advisory for high-net-worth individuals. Discover unparalleled architectural mastery across the North Coast, Cairo, Alexandria and the New Capital.",
@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     "Cairo real estate",
     "Alexandria properties",
     "New Capital Egypt",
-    "Mokhtar Ibrahim",
+    "Rewan Zakaria",
   ],
   openGraph: {
-    title: "Mokhtar Ibrahim | Luxury Real Estate Expert Egypt",
+    title: "Rewan Zakaria | Luxury Real Estate Expert Egypt",
     description:
       "Curating Egypt's most exclusive addresses for discerning investors.",
     type: "website",

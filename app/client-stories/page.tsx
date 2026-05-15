@@ -3,20 +3,21 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Client Stories",
-  description: "Testimonials from discerning clients who trusted Mokhtar Ibrahim for Egypt's finest real estate.",
+  title: "Client Stories | Rewan Zakaria",
+  description: "Testimonials from discerning clients who trusted Rewan Zakaria for Egypt's finest real estate.",
 };
 
 const testimonials = [
-  { id: 1, quote: "شهادة حق، مختار كان امين معايا الصراحة انا اتعاملت مع brokers كتير كانو عايزين يبيع و وخلاص بس هو الصراحة كان بيختارلي المناسب ليا بغض النظر عن العمولة وكدا", name: "Karim Al-Sayed", property: null, featured: true },
-  { id: 2, quote: "بصراحة مختار اشتغل معايا بضمير. فيلا الساحل اللي رشحهالي رجعتلي ROI حلو اوي الحمدلله انا مكنتش عامل حسابي عليها ساعتها هو اللي اقنعني بيها اصلا", name: "Layla Mansour", property: "North Coast Chalet", featured: false },
-  { id: 3, quote: "مختار ساعدني جداً اول مرجعت من لندن كنت تايه ومش عارف الدنيا فالسوق عاملة ازاي وكان هيتنصب عليا كتير بس حد رشحلي مختار وقالي انه واثق فيه وفعلا جابلي حاجة احسن من اللي كنت عايزها وبسعر اقل كمان", name: "Tariq Hassan", property: "Zamalek Penthouse", featured: false },
-  { id: 4, quote: "أكتر حاجة عجبتني في التعامل مع مختار هي الأمانة. الحقيقة مكنش عايز يبيع لي وخلاص، بالعكس، وجهني صح وخلاني أصرف نظر عن وحدات تانية كنت فاكرها كويسة بس هو وضح لي عيوبها وجابلي حاجة احسن وبسعر اقل كمان", name: "The Youssef Family", property: "Alexandria Estate", featured: true },
+  { id: 1, quote: "شهادة حق، روان كانت أمينة معايا الصراحة، أنا اتعاملت مع brokers كتير كانوا عايزين يبيعوا وخلاص بس هي الصراحة كانت بتختار لي المناسب ليا بغض النظر عن العمولة وكده", name: "Karim Al-Sayed", property: null, featured: true },
+  { id: 2, quote: "بصراحة روان اشتغلت معايا بضمير. فيلا الساحل اللي رشحتها لي رجعت لي ROI حلو أوي الحمد لله، أنا مكنتش عامل حسابي عليها ساعتها هي اللي أقنعتني بيها أصلاً", name: "Layla Mansour", property: "North Coast Chalet", featured: false },
+  { id: 3, quote: "روان ساعدتني جداً أول ما رجعت من لندن كنت تايه ومش عارف الدنيا في السوق عاملة ازاي وكان هيتنصب عليا كتير بس حد رشح لي روان وقالي إنه واثق فيها وفعلاً جابت لي حاجة أحسن من اللي كنت عايزها وبسعر أقل كمان", name: "Tariq Hassan", property: "Zamalek Penthouse", featured: false },
+  { id: 4, quote: "أكتر حاجة عجبتني في التعامل مع روان هي الأمانة. الحقيقة مكنتش عايزة تبيع لي وخلاص، بالعكس، وجهتني صح وخلتني أصرف نظر عن وحدات تانية كنت فاكرها كويسة بس هي وضحت لي عيوبها وجابت لي حاجة أحسن وبسعر أقل كمان", name: "The Youssef Family", property: "Alexandria Estate", featured: true },
 ];
 
 export default function ClientStoriesPage() {
   return (
     <>
+      {/* Background Blobs */}
       <div className="fixed w-[600px] h-[600px] rounded-full top-[-100px] left-[-200px] z-[-1] pointer-events-none" style={{ background: "rgba(203,219,245,0.6)", filter: "blur(120px)" }} />
       <div className="fixed w-[800px] h-[800px] rounded-full top-[40%] right-[-300px] z-[-1] pointer-events-none" style={{ background: "rgba(255,222,165,0.24)", filter: "blur(120px)" }} />
       <div className="fixed w-[500px] h-[500px] rounded-full bottom-[-100px] left-[20%] z-[-1] pointer-events-none" style={{ background: "rgba(211,228,254,0.6)", filter: "blur(120px)" }} />
@@ -32,14 +33,14 @@ export default function ClientStoriesPage() {
             Curated Excellence
           </h1>
           <p className="font-hanken text-[18px] leading-relaxed text-on-surface-variant max-w-2xl mx-auto">
-            Discover the architectural masterpieces and serene environments we&apos;ve secured for our discerning clientele across Egypt&apos;s most exclusive landscapes.
+            Discover the architectural masterpieces and serene environments Rewan Zakaria has secured for our discerning clientele across Egypt&apos;s most exclusive landscapes.
           </p>
         </header>
 
         <section className="px-mobile-margin md:px-container-padding max-w-[1440px] mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
             {testimonials.map((t) => (
-              <article key={t.id} className={`glass-card rounded-xl p-glass-padding flex flex-col justify-between min-h-[300px] ${t.featured ? "lg:col-span-2" : ""}`}>
+              <article key={t.id} className={`glass-panel rounded-xl p-glass-padding flex flex-col justify-between min-h-[300px] border border-white/20 shadow-lg ${t.featured ? "lg:col-span-2" : ""}`}>
                 <div className="mb-8">
                   <span className={`material-symbols-outlined mb-4 ${t.featured ? "text-secondary text-4xl" : "text-outline-variant text-3xl"}`}
                     style={{ fontVariationSettings: '"FILL" 1' }}>format_quote</span>

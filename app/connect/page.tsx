@@ -12,19 +12,19 @@ const contactMethods = [
     icon: "chat",
     title: "WhatsApp",
     subtitle: "Instant, discreet communication.",
-    href: "https://wa.me/201213082110",
+    href: "https://wa.me/201098535424",
   },
   {
     icon: "call",
     title: "Direct Line",
-    subtitle: "+20 121 308 2110",
-    href: "tel:+201213082110",
+    subtitle: "+201098535424",
+    href: "tel:+201098535424",
   },
   {
     icon: "work",
     title: "LinkedIn",
     subtitle: "Professional network & insights.",
-    href: "https://www.linkedin.com/in/mokhtar-ibrahim-alex/",
+    href: "https://www.linkedin.com/in/rewan-hossam-18ba283a5/",
   },
 ];
 
@@ -87,11 +87,10 @@ export default function ConnectPage() {
       {/* Background */}
       <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
         <Image
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOxC9dZfgGZNR8S79g7vFKoRugReOF1WZ4IoGehFP62UluQg8yMbrfR0IGz1Gg60COfqM_mochmt9Ek-Q5Er4g47o4jFC-DFIu2JxYJyy--2CoVjHvDliYW38GSyQEuL61E2wCNr2pilOqhNY3oILs-56wkZe-5XcxsCsJKLHXOIsnY0PXn2RjP2IodFH-zK1F17g3elcsymWxNuz4P83t1XET-IKWcs4VI96SKC3i_IJA5MfAoHOLoc-OrnKj-tVHKjmkpeQckMWn"
+          src="/images/bg-hero.jpg"
           alt="Background"
           fill
           className="object-cover opacity-[0.15] blur-[40px] scale-110"
-          unoptimized
         />
       </div>
 
@@ -111,7 +110,7 @@ export default function ConnectPage() {
           </h1>
 
           <p className="font-hanken text-[18px] leading-relaxed text-on-surface-variant max-w-xl">
-            Whether you seek a coastal sanctuary or an urban masterpiece, our advisory team is at your disposal.
+            Whether you seek a coastal sanctuary or an urban masterpiece, Rewan Zakaria is at your disposal for expert guidance.
           </p>
         </section>
 

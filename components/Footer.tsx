@@ -4,13 +4,16 @@ export default function Footer() {
   return (
     <footer className="bg-surface-bright w-full border-t border-outline-variant/30 relative z-10">
       <div className="flex flex-col md:flex-row justify-between items-center py-12 px-mobile-margin md:px-container-padding w-full max-w-[1440px] mx-auto gap-6">
+        
+        {/* Brand Info */}
         <div className="flex flex-col items-center md:items-start">
           <span className="font-manrope font-medium text-2xl text-primary mb-2">Rewan Zakaria</span>
-          <span className="font-hanken text-xs font-semibold tracking-widest text-primary/70 uppercase">
+          <span className="font-hanken text-xs font-semibold tracking-widest text-primary/70 uppercase text-center md:text-left">
             © {new Date().getFullYear()} Real Estate Expert Egypt. Curated Excellence.
           </span>
         </div>
 
+        {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-6">
           {[
             { href: "/", label: "Home" },
@@ -25,14 +28,21 @@ export default function Footer() {
           ))}
         </nav>
 
+        {/* Social Actions */}
         <div className="flex items-center gap-3">
-          <Link href="/connect"
-            className="glass-panel px-4 py-2 rounded-full font-hanken text-xs font-semibold text-primary hover:text-secondary transition-colors duration-300 flex items-center gap-2">
+          <Link 
+            href="https://wa.me/201098535424" 
+            target="_blank"
+            className="glass-panel px-4 py-2 rounded-full font-hanken text-xs font-semibold text-primary hover:text-secondary transition-colors duration-300 flex items-center gap-2 border border-white/20"
+          >
             <span className="material-symbols-outlined text-[16px]">chat</span>
             WhatsApp
           </Link>
-          <Link href="/connect"
-            className="glass-panel px-4 py-2 rounded-full font-hanken text-xs font-semibold text-primary hover:text-secondary transition-colors duration-300 flex items-center gap-2">
+          <Link 
+            href="https://www.linkedin.com/in/rewan-hossam-18ba283a5/" 
+            target="_blank"
+            className="glass-panel px-4 py-2 rounded-full font-hanken text-xs font-semibold text-primary hover:text-secondary transition-colors duration-300 flex items-center gap-2 border border-white/20"
+          >
             <span className="material-symbols-outlined text-[16px]">work</span>
             LinkedIn
           </Link>
