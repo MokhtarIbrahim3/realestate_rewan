@@ -94,7 +94,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
             {/* Bento 1: North Coast */}
             <Link href="/expertise" className="md:col-span-2 glass-panel rounded-xl overflow-hidden group tilt-card relative cursor-pointer block">
-              <Image src="/images/coastal.jpg"
+              <Image src="/images/coastal.png"
                 alt="North Coast Villa" fill className="object-cover opacity-80 mix-blend-overlay transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
               <div className="absolute bottom-0 left-0 p-glass-padding">
@@ -132,7 +132,7 @@ export default function HomePage() {
 
             {/* Bento 4: Cairo & Alex */}
             <Link href="/expertise" className="md:col-span-2 glass-panel rounded-xl overflow-hidden group tilt-card relative cursor-pointer block">
-              <Image src="/images/cairo-skyline.jpg"
+              <Image src="/images/cairo-skyline.png"
                 alt="Cairo Skyline" fill className="object-cover opacity-70 mix-blend-multiply transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/40 to-transparent" />
               <div className="absolute top-1/2 -translate-y-1/2 left-0 p-glass-padding max-w-md">
